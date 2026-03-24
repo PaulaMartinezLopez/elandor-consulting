@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CFO Externo Madrid | CFO Fraccional para Empresas Medianas | Elandor Consulting</title>
+  <meta name="description" content="Eliminar el trabajo que no aporta valor en finanzas con gestión directa. Liderazgo financiero senior sin el coste fijo de un CFO a tiempo completo. Paula Martínez López — Elandor Consulting.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://elandorconsulting.com/eficiencia-procesos-financieros/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1a2e44; --navy-deep: #0f1e2e; --slate: #2d4a63;
+      --accent: #c8933a; --accent-light: #e8b96a;
+      --cream: #f5f0e8; --cream-mid: #ede7db; --cream-dark: #e4ddd2;
+      --text: #1a1a1a; --text-mid: #3d3d3d; --text-light: #7a7370; --rule: #d8d0c4;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Outfit', 'Helvetica Neue', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); color: var(--text); background: var(--cream); overflow-x: hidden; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(245,240,232,0.95); backdrop-filter: blur(16px); border-bottom: 1px solid var(--rule); height: 60px; padding: 0 48px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-brand { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+    .nav-logo { height: 38px; }
+    .nav-brand-name { font-family: var(--font-display); font-size: 17px; font-weight: 600; color: var(--navy); }
+    .nav-brand-sub { font-family: var(--font-display); font-size: 12px; font-style: italic; color: var(--text-light); }
+    .nav-back { font-size: 12px; font-weight: 500; color: var(--text-mid); text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-back:hover { color: var(--navy); }
+    .nav-back::before { content: '← '; }
+
+    .hero { min-height: 100vh; display: grid; grid-template-columns: 55% 45%; padding-top: 60px; }
+    .hero-left { background: var(--navy-deep); display: flex; flex-direction: column; justify-content: center; padding: 80px 64px 80px 80px; position: relative; overflow: hidden; }
+    .hero-left::before { content: ''; position: absolute; top: -140px; right: -140px; width: 480px; height: 480px; border-radius: 50%; border: 1px solid rgba(200,147,58,0.08); pointer-events: none; }
+    .hero-left::after { content: ''; position: absolute; bottom: -60px; left: 40px; width: 200px; height: 200px; border-radius: 50%; border: 1px solid rgba(200,147,58,0.05); pointer-events: none; }
+
+    .hero-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; color: var(--accent); margin-bottom: 28px; opacity: 0; animation: fadeUp 0.6s 0.3s ease forwards; }
+    .hero-h1 { font-family: var(--font-display); font-size: clamp(36px, 4vw, 58px); font-weight: 600; color: #fff; line-height: 1.05; margin-bottom: 20px; opacity: 0; animation: fadeUp 0.6s 0.45s ease forwards; }
+    .hero-divider { width: 48px; height: 1px; background: var(--accent); margin-bottom: 28px; opacity: 0; animation: fadeUp 0.6s 0.55s ease forwards; }
+    .hero-sub { font-size: clamp(15px, 1.5vw, 17px); font-weight: 300; color: rgba(255,255,255,0.68); line-height: 1.9; max-width: 460px; margin-bottom: 44px; opacity: 0; animation: fadeUp 0.6s 0.65s ease forwards; }
+    .hero-cta { display: inline-flex; align-items: center; gap: 12px; font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); text-decoration: none; transition: all 0.25s; opacity: 0; animation: fadeUp 0.6s 0.75s ease forwards; }
+    .hero-cta::after { content: ''; height: 1px; width: 32px; background: rgba(200,147,58,0.4); transition: width 0.25s; }
+    .hero-cta:hover { color: var(--accent-light); gap: 16px; }
+    .hero-cta:hover::after { width: 48px; background: var(--accent-light); }
+
+    .hero-right { background: var(--cream-dark); display: flex; flex-direction: column; }
+    .hero-photo-wrap { position: relative; flex: 1; overflow: hidden; min-height: 0; max-height: 80vh; }
+    .hero-photo { width: 100%; height: 100%; object-fit: contain; object-position: center center; display: block; opacity: 0; animation: fadeIn 0.9s 0.7s ease forwards; filter: contrast(1.02) saturate(0.92); }
+    .hero-photo-overlay { position: absolute; bottom: 0; left: 0; right: 0; height: 80px; background: linear-gradient(to top, var(--cream-dark), transparent); }
+
+    .points { background: white; padding: 64px 0; }
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 48px; }
+    .section-label { font-size: 10.5px; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+    .section-heading { font-family: var(--font-display); font-size: clamp(26px, 2.8vw, 40px); font-weight: 600; color: var(--navy); line-height: 1.15; margin-bottom: 20px; }
+    .section-heading em { font-style: italic; font-weight: 400; color: var(--slate); }
+    .section-rule { width: 40px; height: 1px; background: var(--accent); margin-bottom: 40px; }
+    .points-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+    .point-card { background: var(--cream); border: 1px solid var(--rule); border-top: 3px solid var(--accent); padding: 28px 24px; }
+    .point-title { font-family: var(--font-display); font-size: 19px; font-weight: 600; color: var(--navy); margin-bottom: 8px; line-height: 1.2; }
+    .point-text { font-size: 14px; font-weight: 300; color: var(--text-mid); line-height: 1.7; }
+
+    .contact-section { background: var(--cream); padding: 64px 0; }
+    .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .contact-heading { font-family: var(--font-display); font-size: clamp(28px, 3vw, 44px); font-weight: 600; color: var(--navy); line-height: 1.1; margin-bottom: 16px; }
+    .contact-heading em { font-style: italic; font-weight: 400; color: var(--slate); }
+    .contact-body { font-size: 15px; font-weight: 300; color: var(--text-mid); line-height: 1.85; margin-bottom: 32px; }
+    .contact-brand { display: flex; align-items: center; gap: 14px; padding-top: 24px; border-top: 1px solid var(--rule); }
+    .contact-brand-logo { height: 56px; }
+    .contact-brand-name { font-family: var(--font-display); font-size: 15px; font-weight: 500; color: var(--navy); }
+    .contact-brand-sub { font-size: 12px; font-weight: 300; color: var(--text-light); }
+    .contact-links { display: flex; flex-direction: column; gap: 2px; }
+    .contact-link { display: flex; align-items: center; gap: 16px; padding: 18px 20px; background: white; border: 1px solid var(--rule); text-decoration: none; transition: all 0.2s; }
+    .contact-link:hover { background: var(--cream-mid); border-color: var(--navy); }
+    .contact-link-icon { width: 20px; height: 20px; color: var(--accent); flex-shrink: 0; }
+    .contact-link-label { font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-light); margin-bottom: 3px; }
+    .contact-link-value { font-size: 14px; color: var(--text); }
+    .avail-badge { display: flex; align-items: center; gap: 10px; padding: 16px 20px; border: 1px solid rgba(200,147,58,0.25); background: rgba(200,147,58,0.05); }
+    .avail-dot { width: 8px; height: 8px; border-radius: 50%; background: #4caf7d; flex-shrink: 0; animation: pulse 2.5s infinite; }
+    .avail-text { font-size: 13.5px; font-weight: 300; color: var(--text-mid); }
+    .avail-text strong { font-weight: 500; color: var(--navy); }
+
+    footer { background: var(--navy-deep); padding: 24px 48px; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    .footer-left { display: flex; align-items: center; gap: 12px; }
+    .footer-logo { height: 26px; opacity: 0.4; }
+    .footer-name { font-family: var(--font-display); font-size: 14px; color: rgba(255,255,255,0.3); }
+    .footer-note { font-size: 11px; color: rgba(255,255,255,0.2); letter-spacing: 0.05em; }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes pulse { 0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(76,175,125,0.4); } 50% { opacity: 0.7; box-shadow: 0 0 0 4px rgba(76,175,125,0); } }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+
+    @media (max-width: 900px) {
+      nav { padding: 0 20px; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-left { padding: 100px 24px 60px; }
+      .hero-photo-wrap { max-height: 300px; }
+      .container { padding: 0 24px; }
+      .points { padding: 48px 0; }
+      .points-grid { grid-template-columns: 1fr; }
+      .contact-section { padding: 48px 0; }
+      .contact-layout { grid-template-columns: 1fr; gap: 40px; }
+      footer { flex-direction: column; text-align: center; padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="nav-brand">
+      <img src="/logo.jpeg" alt="Elandor Consulting" class="nav-logo">
+      <div><div class="nav-brand-name">Elandor Consulting</div><div class="nav-brand-sub">Paula Martínez López</div></div>
+    </a>
+    <a href="/" class="nav-back">Inicio</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Procesos · Duplicidades · Eficiencia financiera</div>
+      <h1 class="hero-h1">Eficiencia en la función financiera</h1>
+      <div class="hero-divider"></div>
+      <p class="hero-sub">La función financiera tiene un impacto directo en la calidad de la información que recibe la dirección. Cuando los procesos no están bien diseñados, el equipo dedica esfuerzo a tareas administrativas en lugar de a análisis y control. Restructuro la función para que trabaje en lo que realmente aporta al negocio.</p>
+      <a href="#contacto" class="hero-cta">Hablemos de tu situación</a>
+    </div>
+    <div class="hero-right">
+      <div class="hero-photo-wrap">
+        <img src="/foto.jpeg" alt="Paula Martínez López, CFO externa en Madrid" class="hero-photo" fetchpriority="high">
+        <div class="hero-photo-overlay"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="points">
+    <div class="container">
+      <div class="section-label reveal">Dónde se pierde el tiempo</div>
+      <h2 class="section-heading reveal">Las duplicidades más habituales <em>en la función financiera</em></h2>
+      <div class="section-rule reveal"></div>
+      <div class="points-grid">
+        <div class="point-card reveal">
+          <div class="point-title">El mismo dato en varios sitios</div>
+          <div class="point-text">ERP, Excel, herramienta de reporting. El mismo número se introduce varias veces y cuando hay discrepancias nadie sabe cuál es el bueno.</div>
+        </div>
+        <div class="point-card reveal reveal-delay-1">
+          <div class="point-title">Informes montados a mano cada mes</div>
+          <div class="point-text">Siempre el mismo proceso, siempre el mismo tiempo. Y si esa persona no está, el informe no sale.</div>
+        </div>
+        <div class="point-card reveal reveal-delay-2">
+          <div class="point-title">Conciliaciones y aprobaciones sin flujo claro</div>
+          <div class="point-text">Bancos, proveedores, facturas que esperan. Fricción innecesaria que retrasa la operativa y genera errores evitables.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contacto">
+    <div class="container">
+      <div class="contact-layout">
+        <div>
+          <h2 class="contact-heading reveal">Cuéntame<br><em>tu situación</em></h2>
+          <p class="contact-body reveal">Una primera conversación para ver si tiene sentido trabajar juntos. Sin propuestas genéricas — directamente al punto.</p>
+          <div class="contact-brand reveal">
+            <img src="/logo.jpeg" alt="Elandor Consulting" class="contact-brand-logo">
+            <div><div class="contact-brand-name">Elandor Consulting</div><div class="contact-brand-sub">Madrid, España</div></div>
+          </div>
+        </div>
+        <div class="contact-links reveal">
+          <a class="contact-link" href="/cdn-cgi/l/email-protection#fa8a9b8f969b979b888e93949f80ba9f969b949e9588999594898f968e93949dd4999597">
+            <svg class="contact-link-icon" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="13" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M2 7l8 5 8-5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            <div><div class="contact-link-label">Email</div><div class="contact-link-value"><span class="__cf_email__" data-cfemail="cbbbaabea7aaa6aab9bfa2a5aeb18baea7aaa5afa4b9a8a4a5b8bea7bfa2a5ace5a8a4a6">[email&#160;protected]</span></div></div>
+          </a>
+          <a class="contact-link" href="https://linkedin.com/in/paulamartinez-lopez" target="_blank" rel="noopener">
+            <svg class="contact-link-icon" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M6 8.5v6M6 5.5v.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M10 14.5v-3a2 2 0 014 0v3M10 8.5v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            <div><div class="contact-link-label">LinkedIn</div><div class="contact-link-value">linkedin.com/in/paulamartinez-lopez</div></div>
+          </a>
+          <div class="avail-badge"><span class="avail-dot"></span><span class="avail-text"><strong>Actualmente disponible</strong> — presencial en Madrid y remoto.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-left"><img src="/logo.jpeg" alt="Elandor Consulting" class="footer-logo" loading="lazy"><span class="footer-name">Paula Martínez López</span></div>
+    <span class="footer-note">Eficiencia Financiera · Elandor Consulting · <a href="/" style="color:inherit;text-decoration:none;">elandorconsulting.com</a></span>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    const observer = new IntersectionObser
