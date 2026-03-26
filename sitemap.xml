@@ -2,21 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Página principal -->
   <url>
     <loc>https://elandorconsulting.com/</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://elandorconsulting.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://elandorconsulting.com/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://elandorconsulting.com/"/>
   </url>
 
-  <!-- Páginas auxiliares ES -->
   <url>
     <loc>https://elandorconsulting.com/cfo-externo-madrid/</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://elandorconsulting.com/cfo-externo-madrid/"/>
@@ -24,36 +19,8 @@
   </url>
 
   <url>
-    <loc>https://elandorconsulting.com/visibilidad-financiera-pymes/</loc>
-    <lastmod>2026-03-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://elandorconsulting.com/visibilidad-financiera-pymes/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://elandorconsulting.com/financial-reporting-management-information/"/>
-  </url>
-
-  <url>
-    <loc>https://elandorconsulting.com/orden-funcion-financiera/</loc>
-    <lastmod>2026-03-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://elandorconsulting.com/orden-funcion-financiera/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://elandorconsulting.com/finance-function-transformation/"/>
-  </url>
-
-  <url>
-    <loc>https://elandorconsulting.com/eficiencia-procesos-financieros/</loc>
-    <lastmod>2026-03-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://elandorconsulting.com/eficiencia-procesos-financieros/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://elandorconsulting.com/finance-process-optimisation/"/>
-  </url>
-
-  <!-- Páginas auxiliares EN -->
-  <url>
     <loc>https://elandorconsulting.com/fractional-cfo-madrid/</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://elandorconsulting.com/fractional-cfo-madrid/"/>
@@ -62,29 +29,9 @@
 
   <url>
     <loc>https://elandorconsulting.com/financial-reporting-management-information/</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://elandorconsulting.com/financial-reporting-management-information/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://elandorconsulting.com/visibilidad-financiera-pymes/"/>
-  </url>
-
-  <url>
-    <loc>https://elandorconsulting.com/finance-function-transformation/</loc>
-    <lastmod>2026-03-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://elandorconsulting.com/finance-function-transformation/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://elandorconsulting.com/orden-funcion-financiera/"/>
-  </url>
-
-  <url>
-    <loc>https://elandorconsulting.com/finance-process-optimisation/</loc>
-    <lastmod>2026-03-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://elandorconsulting.com/finance-process-optimisation/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://elandorconsulting.com/eficiencia-procesos-financieros/"/>
   </url>
 
 </urlset>
