@@ -1375,6 +1375,11 @@
       const fn = document.querySelector('.footer-note');
       if (fn && t.footer_note) fn.textContent = t.footer_note;
       // Lang attribute
+      const linkCfo = document.getElementById('link-cfo');
+if (linkCfo) {
+  linkCfo.href = currentLang === 'es' ? '/cfo-externo-madrid/' : '/fractional-cfo-madrid/';
+  linkCfo.textContent = currentLang === 'es' ? 'CFO externa en Madrid' : 'fractional CFO in Madrid';
+}
       document.documentElement.lang = currentLang;
     }
   </script>
