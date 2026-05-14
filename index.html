@@ -360,6 +360,31 @@
       background: var(--accent-light);
     }
 
+    .hero-cta-fallback {
+      margin-top: 16px;
+      font-size: 13px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.55);
+      letter-spacing: 0.02em;
+      opacity: 0;
+      animation: fadeUp 0.6s 1.2s ease forwards;
+    }
+
+    .hero-cta-fallback a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(200,147,58,0.4);
+      padding-bottom: 1px;
+      transition: all 0.25s;
+    }
+
+    .hero-cta-fallback a:hover,
+    .hero-cta-fallback a:focus-visible {
+      color: var(--accent-light);
+      border-bottom-color: var(--accent-light);
+      outline: none;
+    }
+
     /* HERO RIGHT */
     .hero-right {
       background: var(--cream-dark);
@@ -918,6 +943,7 @@
         </p>
 
         <a href="mailto:paulamartinez@elandorconsulting.com" class="hero-cta">Get in touch</a>
+        <p class="hero-cta-fallback"><span class="hero-cta-fallback-prefix">or write to</span> <a href="mailto:paulamartinez@elandorconsulting.com">paulamartinez@elandorconsulting.com</a></p>
       </div>
 
       <div class="hero-right">
@@ -1198,6 +1224,7 @@
         hero_h1: 'Senior finance leadership, working alongside management to unlock what the business needs next.',
         hero_tagline: 'I work directly with management teams in manufacturing, food distribution and industrial businesses — in Spain and across Europe — building the financial control and reporting infrastructure they need to make better decisions.',
         hero_cta: 'Get in touch',
+        hero_cta_fallback: 'or write to',
         stat1_label: 'Years in finance leadership across complex international environments',
         stat2_label: 'Years as CFO leading finance functions in industrial environments',
         stat3_label: 'Languages · Spain and Italy cross-border operating experience',
@@ -1254,6 +1281,7 @@
         hero_h1: 'Liderazgo financiero senior, junto a dirección, para impulsar lo que el negocio necesita.',
         hero_tagline: 'Trabajo directamente con equipos directivos en manufactura, distribución alimentaria e industria — en España y Europa — construyendo la infraestructura de control financiero y reporting que necesitan para tomar mejores decisiones.',
         hero_cta: 'Hablemos',
+        hero_cta_fallback: 'o escribe a',
         stat1_label: 'Años de liderazgo financiero en entornos internacionales complejos',
         stat2_label: 'Años como CFO liderando funciones financieras en entornos industriales',
         stat3_label: 'Idiomas · Experiencia operativa transfronteriza entre España e Italia',
@@ -1326,6 +1354,9 @@
 
       const heroCta = document.querySelector('.hero-cta');
       if (heroCta && t.hero_cta) heroCta.textContent = t.hero_cta;
+
+      const heroCtaFallbackPrefix = document.querySelector('.hero-cta-fallback-prefix');
+      if (heroCtaFallbackPrefix && t.hero_cta_fallback) heroCtaFallbackPrefix.textContent = t.hero_cta_fallback;
       
       // Stats
       const statLabels = document.querySelectorAll('.hero-stat-label');
