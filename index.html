@@ -1269,6 +1269,13 @@
         contact_brand_sub: 'Madrid, Spain',
         avail_text: '<strong>Currently available</strong> for new fractional CFO and finance transformation engagements — on-site in Madrid and remote.',
         footer_note: 'Fractional CFO · Manufacturing, Industrial & International Operations · Madrid · Elandor Consulting',
+        fit_label: 'The right fit',
+        fit_heading: 'I work with management teams <em style="color: rgba(255,255,255,0.45);">where one of these situations applies</em>',
+        fit_p1: 'The finance function exists but has stopped being useful — reporting arrives late, numbers are questioned, and decisions are made without reliable visibility.',
+        fit_p2: 'A transaction or external event is forcing the issue — investment, due diligence, a new shareholder, or a restructuring that requires a different level of financial discipline.',
+        fit_p3: 'The company is growing faster than its financial infrastructure — and the gap between operational complexity and finance capacity is becoming a management problem.',
+        fit_p4: 'An ERP or reporting system is being implemented — and nobody internally has the seniority to lead it as a business project rather than an IT project.',
+        fit_p5: 'If you recognise your company in any of these, I have probably worked through something similar before.',
         profile_cta: 'If this reflects your current situation, <a href="mailto:paulamartinez@elandorconsulting.com" class="primary-link">let\'s discuss it</a>.',
         contact_cta: 'If you need stronger financial control, better decision-making and clearer visibility, <a href="mailto:paulamartinez@elandorconsulting.com" class="primary-link">email me directly</a>.'
       },
@@ -1326,6 +1333,13 @@
         contact_brand_sub: 'Madrid, España',
         avail_text: '<strong>Actualmente disponible</strong> para nuevos proyectos de CFO externa y transformación financiera — presencial en Madrid y en remoto.',
         footer_note: 'CFO Externa · Manufactura, Industria y Operaciones Internacionales · Madrid · Elandor Consulting',
+        fit_label: 'Cuándo se necesita un CFO externo',
+        fit_heading: 'Trabajo con equipos directivos <em style="color: rgba(255,255,255,0.45);">cuando se da alguna de estas situaciones</em>',
+        fit_p1: 'La función financiera existe pero ha dejado de ser útil: el reporting llega tarde, se cuestionan los números y se decide sin visibilidad fiable.',
+        fit_p2: 'Una operación o un hecho externo fuerza la situación: una inversión, una due diligence, la entrada de un socio o una reestructuración que exige otro nivel de disciplina financiera.',
+        fit_p3: 'La empresa crece más rápido que su infraestructura financiera, y la distancia entre la complejidad operativa y la capacidad del área financiera empieza a ser un problema de dirección.',
+        fit_p4: 'Se está implantando un ERP o un sistema de reporting y conviene liderarlo como proyecto de negocio, no como proyecto de informática.',
+        fit_p5: 'Si reconoces tu empresa en alguna de estas situaciones, probablemente ya he pasado por algo parecido.',
         profile_cta: 'Si esto refleja tu situación actual, <a href="mailto:paulamartinez@elandorconsulting.com" class="primary-link">hablemos</a>.',
         contact_cta: 'Si necesitas mayor control financiero, mejor capacidad de decisión y una visibilidad más clara, <a href="mailto:paulamartinez@elandorconsulting.com" class="primary-link">escríbeme directamente</a>.'
       }
@@ -1441,6 +1455,18 @@
 
         const contactCta = document.getElementById('contact-cta');
         if (contactCta && t.contact_cta) contactCta.innerHTML = t.contact_cta;
+      }
+      // The right fit
+      const fitSection = document.querySelector('#fit');
+      if (fitSection) {
+        const sl = fitSection.querySelector('.section-label');
+        const sh = fitSection.querySelector('.section-heading');
+        if (sl && t.fit_label) sl.textContent = t.fit_label;
+        if (sh && t.fit_heading) sh.innerHTML = t.fit_heading;
+        const ps = fitSection.querySelectorAll('p');
+        ['fit_p1','fit_p2','fit_p3','fit_p4','fit_p5'].forEach((k, i) => {
+          if (ps[i] && t[k]) ps[i].textContent = t[k];
+        });
       }
       // Footer
       const fn = document.querySelector('.footer-note');
